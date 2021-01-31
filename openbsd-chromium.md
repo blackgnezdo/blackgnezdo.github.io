@@ -30,3 +30,7 @@ The pobj directory after `make build` contains a viable browser which
 can be launched from `out/Release` directory with `--no-sandbox
 --disable-unveil`. A `FLAVOR=component` binary additionally needs
 `LD_LIBRARY_PATH=$path_to_pobj_chromium/Release`.
+
+`PATCHORIG=.orig.port` in chromimum Makefile means that patch backup
+files don't have the ordinary `.orig` suffix. This might be puzzling
+the first time.
