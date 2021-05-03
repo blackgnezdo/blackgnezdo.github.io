@@ -34,3 +34,9 @@ can be launched from `out/Release` directory with `--no-sandbox
 `PATCHORIG=.orig.port` in chromimum Makefile means that patch backup
 files don't have the ordinary `.orig` suffix. This might be puzzling
 the first time.
+
+## Debugging tips
+
+To debug *pledge stuff* run chromium with `--enable-logging --v=1` and
+when you hit the pledge, grep the `.config/chromium/chrome_debug.log`
+file for the pid.
